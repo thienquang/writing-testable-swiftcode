@@ -14,6 +14,10 @@
 		DDAB9D19205984B1009367F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAB9D17205984B1009367F5 /* LaunchScreen.storyboard */; };
 		DDAB9D24205984B1009367F5 /* SpeedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9D23205984B1009367F5 /* SpeedometerTests.swift */; };
 		DDAB9D2F205984B2009367F5 /* SpeedometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9D2E205984B2009367F5 /* SpeedometerUITests.swift */; };
+		DDAB9DB220598881009367F5 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DA72059883E009367F5 /* SwinjectStoryboard.framework */; };
+		DDAB9DB320598881009367F5 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DA72059883E009367F5 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDAB9DCF20598896009367F5 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DC22059888A009367F5 /* Swinject.framework */; };
+		DDAB9DD020598896009367F5 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DC22059888A009367F5 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,127 @@
 			remoteGlobalIDString = DDAB9D0A205984B1009367F5;
 			remoteInfo = Speedometer;
 		};
+		DDAB9DA62059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904061CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		DDAB9DA82059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904101CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOSTests";
+		};
+		DDAB9DAA2059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562781CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSX";
+		};
+		DDAB9DAC2059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562811CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSXTests";
+		};
+		DDAB9DAE2059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562941CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOS";
+		};
+		DDAB9DB02059883E009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D5629D1CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOSTests";
+		};
+		DDAB9DB420598881009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 985904051CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		DDAB9DC12059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE811B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		DDAB9DC32059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE8B1B5FC9DF00294975;
+			remoteInfo = "Swinject-iOSTests";
+		};
+		DDAB9DC52059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899BC1B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSX";
+		};
+		DDAB9DC72059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899C51B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSXTests";
+		};
+		DDAB9DC92059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985010C61BBE76D400A2CCFC;
+			remoteInfo = "Swinject-watchOS";
+		};
+		DDAB9DCB2059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C7F1BBFC7A50005C6D3;
+			remoteInfo = "Swinject-tvOS";
+		};
+		DDAB9DCD2059888A009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C881BBFC7A60005C6D3;
+			remoteInfo = "Swinject-tvOSTests";
+		};
+		DDAB9DD120598896009367F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 981ABE801B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDAB9DB620598881009367F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DDAB9DB320598881009367F5 /* SwinjectStoryboard.framework in Embed Frameworks */,
+				DDAB9DD020598896009367F5 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DDAB9D0B205984B1009367F5 /* Speedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +171,8 @@
 		DDAB9D2A205984B2009367F5 /* SpeedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAB9D2E205984B2009367F5 /* SpeedometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerUITests.swift; sourceTree = "<group>"; };
 		DDAB9D30205984B2009367F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
+		DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAB9DB220598881009367F5 /* SwinjectStoryboard.framework in Frameworks */,
+				DDAB9DCF20598896009367F5 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +209,8 @@
 				DDAB9D22205984B1009367F5 /* SpeedometerTests */,
 				DDAB9D2D205984B2009367F5 /* SpeedometerUITests */,
 				DDAB9D0C205984B1009367F5 /* Products */,
+				DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */,
+				DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +255,33 @@
 			path = SpeedometerUITests;
 			sourceTree = "<group>";
 		};
+		DDAB9D9E2059883E009367F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB9DA72059883E009367F5 /* SwinjectStoryboard.framework */,
+				DDAB9DA92059883E009367F5 /* SwinjectStoryboardTests.xctest */,
+				DDAB9DAB2059883E009367F5 /* SwinjectStoryboard.framework */,
+				DDAB9DAD2059883E009367F5 /* SwinjectStoryboardTests.xctest */,
+				DDAB9DAF2059883E009367F5 /* SwinjectStoryboard.framework */,
+				DDAB9DB12059883E009367F5 /* SwinjectStoryboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDAB9DB82059888A009367F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB9DC22059888A009367F5 /* Swinject.framework */,
+				DDAB9DC42059888A009367F5 /* SwinjectTests.xctest */,
+				DDAB9DC62059888A009367F5 /* Swinject.framework */,
+				DDAB9DC82059888A009367F5 /* SwinjectTests.xctest */,
+				DDAB9DCA2059888A009367F5 /* Swinject.framework */,
+				DDAB9DCC2059888A009367F5 /* Swinject.framework */,
+				DDAB9DCE2059888A009367F5 /* SwinjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +292,13 @@
 				DDAB9D07205984B1009367F5 /* Sources */,
 				DDAB9D08205984B1009367F5 /* Frameworks */,
 				DDAB9D09205984B1009367F5 /* Resources */,
+				DDAB9DB620598881009367F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DDAB9DB520598881009367F5 /* PBXTargetDependency */,
+				DDAB9DD220598896009367F5 /* PBXTargetDependency */,
 			);
 			name = Speedometer;
 			productName = Speedometer;
@@ -218,6 +378,16 @@
 			mainGroup = DDAB9D02205984B1009367F5;
 			productRefGroup = DDAB9D0C205984B1009367F5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DDAB9DB82059888A009367F5 /* Products */;
+					ProjectRef = DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */;
+				},
+				{
+					ProductGroup = DDAB9D9E2059883E009367F5 /* Products */;
+					ProjectRef = DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DDAB9D0A205984B1009367F5 /* Speedometer */,
@@ -226,6 +396,100 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DDAB9DA72059883E009367F5 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = DDAB9DA62059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DA92059883E009367F5 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = DDAB9DA82059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DAB2059883E009367F5 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = DDAB9DAA2059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DAD2059883E009367F5 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = DDAB9DAC2059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DAF2059883E009367F5 /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = DDAB9DAE2059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DB12059883E009367F5 /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = DDAB9DB02059883E009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DC22059888A009367F5 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = DDAB9DC12059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DC42059888A009367F5 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = DDAB9DC32059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DC62059888A009367F5 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = DDAB9DC52059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DC82059888A009367F5 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = DDAB9DC72059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DCA2059888A009367F5 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = DDAB9DC92059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DCC2059888A009367F5 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = DDAB9DCB2059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDAB9DCE2059888A009367F5 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = DDAB9DCD2059888A009367F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DDAB9D09205984B1009367F5 /* Resources */ = {
@@ -292,6 +556,16 @@
 			isa = PBXTargetDependency;
 			target = DDAB9D0A205984B1009367F5 /* Speedometer */;
 			targetProxy = DDAB9D2B205984B2009367F5 /* PBXContainerItemProxy */;
+		};
+		DDAB9DB520598881009367F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwinjectStoryboard-iOS";
+			targetProxy = DDAB9DB420598881009367F5 /* PBXContainerItemProxy */;
+		};
+		DDAB9DD220598896009367F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-iOS";
+			targetProxy = DDAB9DD120598896009367F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +699,7 @@
 		DDAB9D34205984B2009367F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Speedometer/Info.plist;
@@ -439,6 +714,7 @@
 		DDAB9D35205984B2009367F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Speedometer/Info.plist;
