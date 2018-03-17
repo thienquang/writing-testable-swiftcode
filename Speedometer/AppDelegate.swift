@@ -7,40 +7,55 @@
 //
 
 import UIKit
+import SwinjectStoryboard
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
 
   var window: UIWindow?
+  let mainAssembler = MainAssembler()
+  let locationAuthorization: SPDLocationAuthorization
+  
+  override init() {
+    locationAuthorization = mainAssembler.resolver.resolve(SPDLocationAuthorization.self)!
+    super.init()
+    locationAuthorization.delegate = self
+    
+  }
+}
 
+private extension AppDelegate {
+  func setupWindow() {
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    window.makeKeyAndVisible()
+    
+    let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil)
+    window.backgroundColor = UIColor.black
+    window.rootViewController = storyboard.instantiateInitialViewController()
+    self.window = window
+  }
+}
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+extension AppDelegate: UIApplicationDelegate {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    
+    setupWindow()
+    
+    locationAuthorization.checkAuthorization()
     return true
   }
+}
 
-  func applicationWillResignActive(_ application: UIApplication) {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+extension AppDelegate: SPDLocationAuthorizationDelegate {
+  func authorizationDenied(for locationAuthorization: SPDLocationAuthorization) {
+    let alertController = UIAlertController(title: "Permission Denied", message: "Speedometer needs access to your location to function.", preferredStyle: .alert)
+    
+    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    alertController.addAction(okAction)
+    
+    window?.rootViewController?.present(alertController, animated: true, completion: nil)
   }
-
-  func applicationDidEnterBackground(_ application: UIApplication) {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-  }
-
-  func applicationWillEnterForeground(_ application: UIApplication) {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-  }
-
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-  }
-
-  func applicationWillTerminate(_ application: UIApplication) {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-  }
-
-
+  
+  
 }
 

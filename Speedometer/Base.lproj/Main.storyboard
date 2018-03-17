@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speedometer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASM-vz-Mpw">
+                                <rect key="frame" x="16" y="531.5" width="116.5" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLw-SA-NmH">
+                                <rect key="frame" x="16" y="632.5" width="49" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqX-A4-rfa" customClass="UIBorderedButton" customModule="Speedometer" customModuleProvider="target">
+                                <rect key="frame" x="282" y="616" width="77" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Tya-z2-aUu"/>
+                                </constraints>
+                                <state key="normal" title="Max Speed"/>
+                                <connections>
+                                    <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1p-Zs-Cpy"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikf-ad-BPn">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-px-0D6">
+                                        <rect key="frame" x="22" y="40" width="49" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-e7-mud">
+                                        <rect key="frame" x="16" y="-60.5" width="116.5" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-ij-dup" customClass="UIBorderedButton" customModule="Speedometer" customModuleProvider="target">
+                                        <rect key="frame" x="282" y="24" width="77" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="R3h-th-p0U"/>
+                                        </constraints>
+                                        <state key="normal" title="Max Speed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ac8-8H-adD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8Vf-J7-e3N"/>
+                                    <constraint firstItem="ghX-px-0D6" firstAttribute="leading" secondItem="Ikf-ad-BPn" secondAttribute="leading" constant="22" id="BMB-hQ-1p0"/>
+                                    <constraint firstAttribute="bottom" secondItem="gKf-e7-mud" secondAttribute="bottom" constant="16" id="DKN-DS-G6C"/>
+                                    <constraint firstAttribute="trailing" secondItem="W2h-ij-dup" secondAttribute="trailing" constant="16" id="GBy-Gy-LzU"/>
+                                    <constraint firstItem="gKf-e7-mud" firstAttribute="leading" secondItem="Ikf-ad-BPn" secondAttribute="leading" constant="16" id="Jpt-AV-b3s"/>
+                                    <constraint firstAttribute="bottom" secondItem="W2h-ij-dup" secondAttribute="bottom" constant="16" id="K6A-vL-41f"/>
+                                    <constraint firstAttribute="bottom" secondItem="ghX-px-0D6" secondAttribute="bottom" constant="8" id="Ntw-Mb-nVH"/>
+                                    <constraint firstItem="W2h-ij-dup" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ikf-ad-BPn" secondAttribute="leading" constant="20" symbolic="YES" id="UV7-9E-zMP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ASM-vz-Mpw" secondAttribute="bottom" constant="16" id="5Em-Qs-86F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xqX-A4-rfa" secondAttribute="bottom" constant="16" id="7SO-y2-fTl"/>
+                            <constraint firstItem="Ikf-ad-BPn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Egj-25-8ZI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xqX-A4-rfa" secondAttribute="trailing" constant="16" id="OaS-Xp-PjY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iLw-SA-NmH" secondAttribute="trailing" constant="20" symbolic="YES" id="P50-cv-985"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iLw-SA-NmH" secondAttribute="bottom" constant="8" id="PXU-Hm-FYq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ASM-vz-Mpw" secondAttribute="trailing" constant="20" symbolic="YES" id="Sqb-Ig-f0c"/>
+                            <constraint firstItem="iLw-SA-NmH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WHQ-1g-a3o"/>
+                            <constraint firstItem="Ikf-ad-BPn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d9J-rP-U6S"/>
+                            <constraint firstItem="ASM-vz-Mpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rlf-xN-GUs"/>
+                            <constraint firstItem="Ikf-ad-BPn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sC1-Hd-H4y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="speedViewHeightConstraint" destination="8Vf-J7-e3N" id="rV4-1R-UUA"/>
+                        <outletCollection property="speedLabels" destination="ASM-vz-Mpw" collectionClass="NSMutableArray" id="kC2-Wa-mJY"/>
+                        <outletCollection property="colorableViews" destination="xqX-A4-rfa" collectionClass="NSMutableArray" id="vD5-cx-J7t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
         </scene>
     </scenes>
 </document>

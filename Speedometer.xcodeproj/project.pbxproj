@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD318315205C1E8100CE4AA7 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318314205C1E8100CE4AA7 /* MainAssembler.swift */; };
+		DD318323205C268900CE4AA7 /* UIBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318322205C268900CE4AA7 /* UIBorderedButton.swift */; };
+		DD318326205CCBE800CE4AA7 /* SPDLocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318325205CCBE800CE4AA7 /* SPDLocationManagerMock.swift */; };
+		DD318328205CCD1A00CE4AA7 /* SPDLocationAuthorizationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318327205CCD1A00CE4AA7 /* SPDLocationAuthorizationMock.swift */; };
+		DD31832A205CCD7D00CE4AA7 /* SPDLocationAuthorizationDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318329205CCD7D00CE4AA7 /* SPDLocationAuthorizationDelegateMock.swift */; };
+		DD31832C205CCDB500CE4AA7 /* SPDLocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31832B205CCDB500CE4AA7 /* SPDLocationProviderMock.swift */; };
+		DD31832E205CCEFE00CE4AA7 /* SPDLocationConsumerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31832D205CCEFE00CE4AA7 /* SPDLocationConsumerMock.swift */; };
+		DD318330205CCF5000CE4AA7 /* SPDLocationSpeedCheckerDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31832F205CCF5000CE4AA7 /* SPDLocationSpeedCheckerDelegateMock.swift */; };
+		DD318332205CCFAD00CE4AA7 /* SPDLocationSpeedProviderDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318331205CCFAD00CE4AA7 /* SPDLocationSpeedProviderDelegateMock.swift */; };
+		DD318335205CD02600CE4AA7 /* SPDLocationAuthorizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318334205CD02600CE4AA7 /* SPDLocationAuthorizationTests.swift */; };
+		DD318337205CF39400CE4AA7 /* SPDLocationProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD318336205CF39400CE4AA7 /* SPDLocationProviderTests.swift */; };
 		DDAB9D0F205984B1009367F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9D0E205984B1009367F5 /* AppDelegate.swift */; };
 		DDAB9D11205984B1009367F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB9D10205984B1009367F5 /* ViewController.swift */; };
 		DDAB9D14205984B1009367F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAB9D12205984B1009367F5 /* Main.storyboard */; };
@@ -18,6 +29,11 @@
 		DDAB9DB320598881009367F5 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DA72059883E009367F5 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDAB9DCF20598896009367F5 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DC22059888A009367F5 /* Swinject.framework */; };
 		DDAB9DD020598896009367F5 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB9DC22059888A009367F5 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDDDE882205AB2C4001F6EDF /* SPDLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE881205AB2C4001F6EDF /* SPDLocationManager.swift */; };
+		DDDDE884205ABC66001F6EDF /* SPDLocationAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE883205ABC66001F6EDF /* SPDLocationAuthorization.swift */; };
+		DDDDE886205AC0FD001F6EDF /* SPDLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE885205AC0FD001F6EDF /* SPDLocationProvider.swift */; };
+		DDDDE888205AC782001F6EDF /* SPDLocationSpeedProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE887205AC782001F6EDF /* SPDLocationSpeedProvider.swift */; };
+		DDDDE88A205AC954001F6EDF /* SPDLocationSpeedChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDE889205AC954001F6EDF /* SPDLocationSpeedChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +174,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DD318314205C1E8100CE4AA7 /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		DD318322205C268900CE4AA7 /* UIBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBorderedButton.swift; sourceTree = "<group>"; };
+		DD318325205CCBE800CE4AA7 /* SPDLocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationManagerMock.swift; sourceTree = "<group>"; };
+		DD318327205CCD1A00CE4AA7 /* SPDLocationAuthorizationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationAuthorizationMock.swift; sourceTree = "<group>"; };
+		DD318329205CCD7D00CE4AA7 /* SPDLocationAuthorizationDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationAuthorizationDelegateMock.swift; sourceTree = "<group>"; };
+		DD31832B205CCDB500CE4AA7 /* SPDLocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationProviderMock.swift; sourceTree = "<group>"; };
+		DD31832D205CCEFE00CE4AA7 /* SPDLocationConsumerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationConsumerMock.swift; sourceTree = "<group>"; };
+		DD31832F205CCF5000CE4AA7 /* SPDLocationSpeedCheckerDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationSpeedCheckerDelegateMock.swift; sourceTree = "<group>"; };
+		DD318331205CCFAD00CE4AA7 /* SPDLocationSpeedProviderDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationSpeedProviderDelegateMock.swift; sourceTree = "<group>"; };
+		DD318334205CD02600CE4AA7 /* SPDLocationAuthorizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationAuthorizationTests.swift; sourceTree = "<group>"; };
+		DD318336205CF39400CE4AA7 /* SPDLocationProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationProviderTests.swift; sourceTree = "<group>"; };
 		DDAB9D0B205984B1009367F5 /* Speedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAB9D0E205984B1009367F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDAB9D10205984B1009367F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +200,11 @@
 		DDAB9D30205984B2009367F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAB9D9D2059883E009367F5 /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		DDAB9DB72059888A009367F5 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
+		DDDDE881205AB2C4001F6EDF /* SPDLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationManager.swift; sourceTree = "<group>"; };
+		DDDDE883205ABC66001F6EDF /* SPDLocationAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationAuthorization.swift; sourceTree = "<group>"; };
+		DDDDE885205AC0FD001F6EDF /* SPDLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationProvider.swift; sourceTree = "<group>"; };
+		DDDDE887205AC782001F6EDF /* SPDLocationSpeedProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationSpeedProvider.swift; sourceTree = "<group>"; };
+		DDDDE889205AC954001F6EDF /* SPDLocationSpeedChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDLocationSpeedChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +234,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD318321205C265D00CE4AA7 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				DD318322205C268900CE4AA7 /* UIBorderedButton.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		DD318324205CCBCA00CE4AA7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DD318325205CCBE800CE4AA7 /* SPDLocationManagerMock.swift */,
+				DD318327205CCD1A00CE4AA7 /* SPDLocationAuthorizationMock.swift */,
+				DD318329205CCD7D00CE4AA7 /* SPDLocationAuthorizationDelegateMock.swift */,
+				DD31832B205CCDB500CE4AA7 /* SPDLocationProviderMock.swift */,
+				DD31832D205CCEFE00CE4AA7 /* SPDLocationConsumerMock.swift */,
+				DD31832F205CCF5000CE4AA7 /* SPDLocationSpeedCheckerDelegateMock.swift */,
+				DD318331205CCFAD00CE4AA7 /* SPDLocationSpeedProviderDelegateMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DD318333205CCFFB00CE4AA7 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DD318334205CD02600CE4AA7 /* SPDLocationAuthorizationTests.swift */,
+				DD318336205CF39400CE4AA7 /* SPDLocationProviderTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		DDAB9D02205984B1009367F5 = {
 			isa = PBXGroup;
 			children = (
@@ -227,12 +290,15 @@
 		DDAB9D0D205984B1009367F5 /* Speedometer */ = {
 			isa = PBXGroup;
 			children = (
+				DD318321205C265D00CE4AA7 /* UIViews */,
+				DDDDE875205AB29E001F6EDF /* Location */,
 				DDAB9D0E205984B1009367F5 /* AppDelegate.swift */,
 				DDAB9D10205984B1009367F5 /* ViewController.swift */,
 				DDAB9D12205984B1009367F5 /* Main.storyboard */,
 				DDAB9D15205984B1009367F5 /* Assets.xcassets */,
 				DDAB9D17205984B1009367F5 /* LaunchScreen.storyboard */,
 				DDAB9D1A205984B1009367F5 /* Info.plist */,
+				DD318314205C1E8100CE4AA7 /* MainAssembler.swift */,
 			);
 			path = Speedometer;
 			sourceTree = "<group>";
@@ -240,6 +306,8 @@
 		DDAB9D22205984B1009367F5 /* SpeedometerTests */ = {
 			isa = PBXGroup;
 			children = (
+				DD318333205CCFFB00CE4AA7 /* Location */,
+				DD318324205CCBCA00CE4AA7 /* Mocks */,
 				DDAB9D23205984B1009367F5 /* SpeedometerTests.swift */,
 				DDAB9D25205984B2009367F5 /* Info.plist */,
 			);
@@ -280,6 +348,18 @@
 				DDAB9DCE2059888A009367F5 /* SwinjectTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DDDDE875205AB29E001F6EDF /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDE881205AB2C4001F6EDF /* SPDLocationManager.swift */,
+				DDDDE883205ABC66001F6EDF /* SPDLocationAuthorization.swift */,
+				DDDDE885205AC0FD001F6EDF /* SPDLocationProvider.swift */,
+				DDDDE887205AC782001F6EDF /* SPDLocationSpeedProvider.swift */,
+				DDDDE889205AC954001F6EDF /* SPDLocationSpeedChecker.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,8 +603,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD318323205C268900CE4AA7 /* UIBorderedButton.swift in Sources */,
+				DDDDE882205AB2C4001F6EDF /* SPDLocationManager.swift in Sources */,
+				DD318315205C1E8100CE4AA7 /* MainAssembler.swift in Sources */,
 				DDAB9D11205984B1009367F5 /* ViewController.swift in Sources */,
+				DDDDE884205ABC66001F6EDF /* SPDLocationAuthorization.swift in Sources */,
+				DDDDE88A205AC954001F6EDF /* SPDLocationSpeedChecker.swift in Sources */,
 				DDAB9D0F205984B1009367F5 /* AppDelegate.swift in Sources */,
+				DDDDE886205AC0FD001F6EDF /* SPDLocationProvider.swift in Sources */,
+				DDDDE888205AC782001F6EDF /* SPDLocationSpeedProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +619,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD318326205CCBE800CE4AA7 /* SPDLocationManagerMock.swift in Sources */,
+				DD318328205CCD1A00CE4AA7 /* SPDLocationAuthorizationMock.swift in Sources */,
 				DDAB9D24205984B1009367F5 /* SpeedometerTests.swift in Sources */,
+				DD318335205CD02600CE4AA7 /* SPDLocationAuthorizationTests.swift in Sources */,
+				DD318330205CCF5000CE4AA7 /* SPDLocationSpeedCheckerDelegateMock.swift in Sources */,
+				DD31832A205CCD7D00CE4AA7 /* SPDLocationAuthorizationDelegateMock.swift in Sources */,
+				DD31832E205CCEFE00CE4AA7 /* SPDLocationConsumerMock.swift in Sources */,
+				DD318337205CF39400CE4AA7 /* SPDLocationProviderTests.swift in Sources */,
+				DD318332205CCFAD00CE4AA7 /* SPDLocationSpeedProviderDelegateMock.swift in Sources */,
+				DD31832C205CCDB500CE4AA7 /* SPDLocationProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
